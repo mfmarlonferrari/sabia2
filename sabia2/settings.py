@@ -37,7 +37,6 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sabia2_nucleo',
-    'django.contrib.admin',
 )
 
 MIDDLEWARE_CLASSES = (
