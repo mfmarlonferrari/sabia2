@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f93065c0-a8a6-4b5c-a00d-259374aa6d4a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ferrari\PycharmProjects\sabia2\sabia2_nucleo\__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ferrari\PycharmProjects\sabia2\sabia2_nucleo\admin.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ferrari\PycharmProjects\sabia2\sabia2_nucleo\models.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ferrari\PycharmProjects\sabia2\sabia2_nucleo\tests.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ferrari\PycharmProjects\sabia2\sabia2_nucleo\views.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabia2/settings.py" afterPath="$PROJECT_DIR$/sabia2/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabia2/urls.py" afterPath="$PROJECT_DIR$/sabia2/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sabia2.iws" />
@@ -30,57 +38,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabia2/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="30" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="340">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabia2_nucleo/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="391">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabia2_nucleo/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="30" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sabia2_nucleo/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="49" selection-end="49" vertical-scroll-proportion="0.08186196" vertical-offset="0" max-vertical-offset="623">
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sabia2/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="20" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1513">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/login/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="20" selection-start="501" selection-end="501" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="714">
+            <state line="74" column="0" selection-start="2390" selection-end="2393" vertical-scroll-proportion="3.0757947" vertical-offset="0" max-vertical-offset="1972">
               <folding />
             </state>
           </provider>
@@ -106,11 +67,11 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/templates/login/login.html" />
-        <option value="$PROJECT_DIR$/sabia2/settings.py" />
         <option value="$PROJECT_DIR$/sabia2_nucleo/admin.py" />
         <option value="$PROJECT_DIR$/sabia2_nucleo/models.py" />
         <option value="$PROJECT_DIR$/sabia2_nucleo/views.py" />
         <option value="$PROJECT_DIR$/sabia2/urls.py" />
+        <option value="$PROJECT_DIR$/sabia2/settings.py" />
       </list>
     </option>
   </component>
@@ -146,6 +107,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -174,11 +136,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="login" />
+              <option name="myItemId" value="sabia2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -192,27 +150,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sabia2_nucleo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sabia2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sabia2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sabia2" />
+              <option name="myItemId" value="Sabia" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -230,6 +173,11 @@
     <option name="myPythonConsoleState">
       <PyConsoleSettings />
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ferrari\PycharmProjects\sabia2" />
+    </key>
   </component>
   <component name="RunManager" selected="Django server.sabia2">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -515,29 +463,33 @@
       <created>1403797799046</created>
       <updated>1403797799046</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="NLTK">
+      <created>1403797811598</created>
+      <updated>1403797811599</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07467057" sideWeight="0.6702619" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.073938504" sideWeight="0.6702619" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.6702619" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.6702619" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990755" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973805" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32973805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -581,16 +533,30 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sabia2/settings.py">
+    <entry file="file://$PROJECT_DIR$/sabia2/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="51" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1530">
+        <state line="6" column="4" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login/login.html">
+    <entry file="file://$PROJECT_DIR$/Sabia/static/js/usuario.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="43" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="213" max-vertical-offset="714">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabia2/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="36" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabia2/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="51" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>
@@ -609,13 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="43" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="213" max-vertical-offset="714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sabia2/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="93" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
@@ -626,13 +585,6 @@
     <entry file="file://$PROJECT_DIR$/sabia2/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="51" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1530">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="43" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
@@ -649,47 +601,24 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login/login.html">
+    <entry file="file://$PROJECT_DIR$/Sabia/static/js/usuario.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="20" selection-start="501" selection-end="501" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabia2/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="20" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.0" vertical-offset="237" max-vertical-offset="1513">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabia2_nucleo/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="30" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabia2_nucleo/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="623">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sabia2/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="30" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+        <state line="18" column="1" selection-start="839" selection-end="839" vertical-scroll-proportion="0.4365971" vertical-offset="0" max-vertical-offset="623">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sabia2_nucleo/views.py">
+    <entry file="file://$PROJECT_DIR$/sabia2/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="49" selection-end="49" vertical-scroll-proportion="0.08186196" vertical-offset="0" max-vertical-offset="623">
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state line="74" column="0" selection-start="2390" selection-end="2393" vertical-scroll-proportion="3.0757947" vertical-offset="0" max-vertical-offset="1972">
+          <folding />
         </state>
       </provider>
     </entry>
