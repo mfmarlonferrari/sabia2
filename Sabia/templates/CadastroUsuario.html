@@ -1,0 +1,80 @@
+{% load staticfiles %}
+{%include "header.html" %}
+
+<style type="text/css">
+	body{background-color: #fff;}        
+</style>
+
+<script src="{% static 'js/usuario.js' %}"></script>
+
+<div class="page-header">
+  <div class="container">
+    <h2>Cadastro de Usuários</h2>
+  </div>
+</div>
+
+<form role="form" id="cadastro_usuario" name="cadastro_usuario" method="POST" action="/salvar_usuario/"> 
+	{% csrf_token %}
+	
+	<div class="container">                 
+        <!-- Text input-->
+        <div class="row">
+			<div class='col-sm-12'>		
+				<div class="form-group">
+					<label class="control-label" for="nome">Nome</label>
+					<input id="nome" name="nome" placeholder="Informe o nome" class="form-control input-normal" type="text" required/>		
+				</div>				
+			</div>
+		</div>
+		
+		<!-- Text input-->		
+		<div class="row">
+			<div class='col-sm-9'>
+				<div class="form-group">
+					<label class="control-label" for="email">E-mail</label>
+					<input id="email" name="email" placeholder="Informe o e-mail" class="form-control" type="email" required/>							
+				</div>
+			</div>
+
+		    <div class='col-sm-3'>
+		        <div class="form-group">
+		        	<label class="control-label" for="senha">Senha</label>		            		             
+		            <input type='password' id="senha" name="senha" class="form-control" required />	
+		        </div>
+		    </div>		    	    		   
+		</div>
+
+		
+		<!-- Dropdown button -->		
+		
+		<div class="btn-group">		 
+		  <button type="button" class="btn btn-success btn-text">Associar Grupo</button>
+		  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+		    <span class="caret"></span>			    
+		  </button>
+		
+		  	{% if grupo %}
+		  		<ul class="dropdown-menu" role="menu">
+			    	{% for value in grupo %}
+			        	<li><a href="#" data-value ="{{value.id}}">{{ value.nome }}</a></li>		        
+			    	{% endfor %}
+		    	</ul>
+			{% else %}
+		    	<p>Nenhum grupo cadastrado.</p>
+			{% endif %}		   
+
+		</div>
+
+		<input type='hidden' id="grupo_id" name="grupo_id"/>		
+
+		<!-- Button -->
+		<div class="form-group margin-button">				  
+		    <button id="salvar" type="submit"  name="salvar" class="btn btn-primary">Salvar</button>		  
+		</div>            
+    
+	</div>
+</form>
+
+
+ 
+ {% include "footer.html" %}

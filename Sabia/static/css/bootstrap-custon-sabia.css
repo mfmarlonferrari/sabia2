@@ -1,0 +1,25 @@
+
+body {
+  margin: 0;
+  background-color: #fff;
+}
+.margin-button{
+
+  margin-top: 30px;
+}
+
+.senha{
+
+	margin-top: 10px;
+}
+
+.star-colorize{
+	color: #FFA500;	
+	font-size:20px;
+	cursor:pointer;
+}
+.star-decolorize{
+	color: #D3D3D3;
+	font-size:20px;
+	cursor:pointer;
+}

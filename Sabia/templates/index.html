@@ -1,0 +1,19 @@
+<!-- Adiciona o topo-->
+{% load staticfiles %}
+{% include "header.html "%}
+      
+      <!-- Tela para login -->            
+      <div class="container">
+        <form class="form-signin" role="form"  method="POST" action="/autenticar_usuario/">
+            {% csrf_token %}
+            <h2 class="form-signin-heading">Acessar Sistema</h2>
+            <input type="email" class="form-control login" placeholder="Email address" id="email" name="email" required autofocus>          
+            <input type="password" class="form-control senha" placeholder="Password" id="senha" name="senha" required>
+            <label class="checkbox">
+              <input type="checkbox" value="remember-me"> Lembrar
+            </label>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+        </form>
+      </div> 
+<!-- Adiciona o rodapé-->
+{% include "footer.html "%}
