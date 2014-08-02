@@ -1,12 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Artigos relacionados</title>
-</head>
-<body>
-{% load googlesearch_inclusion_tags %}
+{% load staticfiles %}
+{%include "header.html" %}
 
-{% googlesearch_form %}
 
-</body>
-</html>
+<style type="text/css">
+	body{background-color: #fff;}
+</style>
+
+<div class="page-header">
+  <div class="container">
+    <h2>Artigos Relacionados</h2>
+  </div>
+</div>
+
+<script>
+  (function() {
+    var cx = '010213211375867678748:7karan2hhnq';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchresults-only></gcse:searchresults-only>
+
+ {% include "footer.html" %}

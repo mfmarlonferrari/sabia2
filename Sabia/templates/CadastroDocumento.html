@@ -7,14 +7,11 @@
 </style>
 
 <link href="{% static 'css/datepicker.css' %}" rel="stylesheet">
-<link href="{% static 'css/bootstrap-tagsinput.css' %}" rel="stylesheet">
 <link href="{% static 'ckeditor/contents.css' %}" rel="stylesheet">
-
 
 <script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
 <script src="{% static 'js/bootstrap-datepicker.pt-BR.js' %}"></script>
 <script src="{% static 'js/bootstrap-filestyle.min.js' %}"></script>
-<script src="{% static 'js/bootstrap-tagsinput.js' %}"></script>
 <script src="{% static 'ckeditor/ckeditor.js' %}"></script>
 
 <script src="{% static 'js/documento.js' %}"></script>
@@ -26,9 +23,6 @@
  	Documentação  	
  	Para formatar campos inputs file
  	http://markusslima.github.io/bootstrap-filestyle
-
-	Tags Inputs	
- 	http://timschlechter.github.io/bootstrap-tagsinput/examples/
 	
 	ckeditor
 	http://ckeditor.com/
@@ -67,22 +61,13 @@
 		    <div class='col-sm-4'>
 		        <div class="form-group">
 		        	<label class="control-label" for="data_publicacao">Data de publicação</label>
-		            <div class='input-group date' data-provide="datepicker" data-date-format="dd/mm/yyyy" id="datepicker">
+		            <div class='input-group date' data-provide="datepicker" data-date-format="yyyy-mm-dd" id="datepicker">
 		                <input type='text' id="data_publicacao" name="data_publicacao" class="form-control" required />			                
 		                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
 		                </span>
 		            </div>
 		        </div>
 		    </div>        
-		</div>
-
-		<!-- Text input file-->
-        <div class="row">
-			<div class='col-sm-12'>		
-				<div class="form-group">					
-					<input id="arquivo" name="arquivo" type="file" class="filestyle" data-buttonText="Arquivo" required/>		
-				</div>				
-			</div>
 		</div>
 
 		<div class="row">					

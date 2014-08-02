@@ -2,10 +2,12 @@
 # Create your views here.
 from django.forms import ModelForm
 from Sabia.models import *
-from django.http import HttpResponse
+from django.http import HttpResponseRedirect
+from django.core.urlresolvers import reverse
 from django.core.context_processors import csrf
 import nltk
 import taggit
+import summarize
 
 from django.shortcuts import render_to_response
 from django.template import RequestContext
@@ -57,25 +59,9 @@ def salvar_usuario(request):
 
 
 def documento(request): 
-    return render_to_response("CadastroDocumento.html", RequestContext(request, {}))  
-    #return render_to_response("CadastroDocumento.html")
-
+    return render_to_response("CadastroDocumento.html", RequestContext(request, {}))
 
 def salvar_documento(request):
-    d = {}
-    d.update(csrf(request))
-    if request.POST:        
-        doc = Documento()
-        doc.titulo = request.POST['titulo']
-        doc.autor = request.POST['autor']
-        doc.data_publicacao = request.POST['data_publicacao']
-        doc.resumo_em_html =  request.POST['resumo_em_html']  
-        #doc.tag = request.POST['tag']
-        doc.classificacao = request.POST["classificacao"]
-        doc = doc.save()
-        return render_to_response('CadastroDocumento.html')
-
-def salva_documento(request):
     """Inicia uma nova pergunta"""
     p = request.POST
     if p["titulo"] and p["autor"] and p["resumo_em_html"]:
@@ -93,7 +79,7 @@ def salva_documento(request):
         sumario = summarize.summarize_text(p["resumo_em_html"])
         sumario = sumario.summaries
         sumario = sumario[0]
-        doc = Documento.objects.create(titulo=p["titulo"], autor=p["autor"], resumo=p["resumo_em_html"],
-                                       data=p["data_publicacao"], classificacao=p["classificacao"], sumario=sumario)
+        doc = Documento.objects.create(titulo=p["titulo"], autor=p["autor"], resumo_em_html=p["resumo_em_html"],
+                                       data_publicacao=p["data_publicacao"], classificacao=p["classificacao"], sumario=sumario)
         doc.tag.add(*tags)
     return HttpResponseRedirect(reverse("documento"))
