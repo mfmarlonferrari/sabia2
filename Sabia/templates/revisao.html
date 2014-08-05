@@ -1,5 +1,6 @@
 {% load staticfiles %}
 {%include "header.html" %}
+<script src="{% static 'ckeditor/ckeditor.js' %}"></script>
 
 <style type="text/css">
    .main { margin-left: 25px; margin-top: 30px; width: 700px; }
@@ -12,15 +13,17 @@
  <div class="main">
 <!-- Respostas  -->
 <div class="title">{{ titulo }}</div>
-<div class="explicacao">{{ conteudo }}</div>
-
+    <textarea id="conteudo" name="conteudo">&lt;p&gt;{{ conteudo }}&lt;/p&gt;</textarea>
+    <script type="text/javascript">
+        CKEDITOR.replace( 'conteudo', {Toolbar: 'Full', height: 400});
+    </script>
 
 <div id="list">
 
     {% for revisao in revisoes %}
         <div class="post">
             <hr>
-            revisado por {{ revisao.autor }} | <span class="date">{{ revisao.dtCriacao }}</span> <br /><br />
+            revisão de {{ revisao.autor }} em <span class="date">{{ revisao.dtCriacao }}</span> <br /><br />
             {{ revisao.conteudo }} <br />
         </div>
     {% endfor %}
