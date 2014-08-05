@@ -19,7 +19,8 @@
     </script>
 
 <div id="list">
-
+{% autoescape off %}
+  
     {% for revisao in revisoes %}
         <div class="post">
             <hr>
@@ -27,6 +28,8 @@
             {{ revisao.conteudo }} <br />
         </div>
     {% endfor %}
+
+{% endautoescape %}
     <a class="button" href={% url 'postar' 'revisar' pk %}>Nova Revisão</a>
 
 </div>
