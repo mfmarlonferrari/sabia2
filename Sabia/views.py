@@ -23,7 +23,6 @@ class DocumentosModelForm(ModelForm):
     class Meta:
         model = Documento
 
-
 def autenticar_usuario(request):
     u = {}
     u.update(csrf(request))
@@ -67,8 +66,12 @@ def revisao(request, pk):
     revisoes = Revisao.objects.filter(documento=pk).order_by("-dtCriacao")
     titulo = Documento.objects.get(pk=pk).titulo
     conteudo = Documento.objects.get(pk=pk).resumo_em_html
-    tag = Documento.objects.get(pk=pk).tag
-    context = dict(revisoes=revisoes, pk=pk, titulo=titulo, conteudo=conteudo, tag=tag)
+    #tag = Documento.objects.get(pk=pk).tag
+    #carrega as tags para serem usadas na pesquisa de relacionados
+    '''tags = []
+    for t in tag.all():
+        tags.append(str(t))'''
+    context = dict(revisoes=revisoes, pk=pk, titulo=titulo, conteudo=conteudo)
     return render(request, 'revisao.html', context)
 
 def detalhe(request, pk):

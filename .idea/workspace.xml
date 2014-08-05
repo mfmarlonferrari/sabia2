@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f93065c0-a8a6-4b5c-a00d-259374aa6d4a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sabia/templates/revisao.html" afterPath="$PROJECT_DIR$/Sabia/templates/revisao.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabia2/urls.py" afterPath="$PROJECT_DIR$/sabia2/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sabia/views.py" afterPath="$PROJECT_DIR$/Sabia/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sabia2.iws" />
@@ -49,7 +51,7 @@
       <file leaf-file-name="revisao.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sabia/templates/revisao.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="59" selection-start="109" selection-end="109" vertical-scroll-proportion="0.089238845" vertical-offset="0" max-vertical-offset="612">
+            <state line="29" column="66" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.68766403" vertical-offset="231" max-vertical-offset="629">
               <folding />
             </state>
           </provider>
@@ -67,7 +69,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sabia2/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="58" selection-start="863" selection-end="863" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="476">
+            <state line="15" column="24" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="476">
               <folding />
             </state>
           </provider>
@@ -76,7 +78,7 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sabia/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="36" selection-start="2567" selection-end="2567" vertical-scroll-proportion="0.0" vertical-offset="788" max-vertical-offset="1989">
+            <state line="67" column="35" selection-start="2169" selection-end="2169" vertical-scroll-proportion="0.0" vertical-offset="851" max-vertical-offset="2040">
               <folding />
             </state>
           </provider>
@@ -91,19 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CadastroDocumento.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sabia/templates/CadastroDocumento.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="52" selection-end="123" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="2227">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="listar.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sabia/templates/listar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="16" selection-start="479" selection-end="479" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="731">
+            <state line="33" column="20" selection-start="806" selection-end="904" vertical-scroll-proportion="-9.192307" vertical-offset="322" max-vertical-offset="731">
               <folding />
             </state>
           </provider>
@@ -138,11 +131,11 @@
         <option value="$PROJECT_DIR$/Sabia/templates/nova.html" />
         <option value="$PROJECT_DIR$/Sabia/templates/CadastroDocumento.html" />
         <option value="$PROJECT_DIR$/Sabia/templates/postar.html" />
-        <option value="$PROJECT_DIR$/Sabia/views.py" />
         <option value="$PROJECT_DIR$/Sabia/templates/detalhe.html" />
         <option value="$PROJECT_DIR$/Sabia/templates/header.html" />
         <option value="$PROJECT_DIR$/Sabia/templates/listar.html" />
         <option value="$PROJECT_DIR$/sabia2/urls.py" />
+        <option value="$PROJECT_DIR$/Sabia/views.py" />
         <option value="$PROJECT_DIR$/Sabia/templates/revisao.html" />
       </list>
     </option>
@@ -603,7 +596,11 @@
       <created>1407268291164</created>
       <updated>1407268291164</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="minor changes">
+      <created>1407270973864</created>
+      <updated>1407270973864</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -745,13 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sabia/templates/listar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="16" selection-start="479" selection-end="479" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="731">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sabia/templates/CadastroDocumento.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="52" selection-end="123" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="2227">
@@ -759,23 +749,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sabia/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="36" selection-start="2567" selection-end="2567" vertical-scroll-proportion="0.0" vertical-offset="788" max-vertical-offset="1989">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sabia/templates/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="45" selection-start="1290" selection-end="1290" vertical-scroll-proportion="1.4203656" vertical-offset="0" max-vertical-offset="1003">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sabia/templates/detalhe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="62" selection-start="463" selection-end="463" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="357">
           <folding />
         </state>
       </provider>
@@ -793,16 +769,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Sabia/templates/detalhe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="62" selection-start="463" selection-end="463" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sabia/templates/listar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="20" selection-start="806" selection-end="904" vertical-scroll-proportion="-9.192307" vertical-offset="322" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sabia2/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="58" selection-start="863" selection-end="863" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="476">
+        <state line="15" column="24" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sabia/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="35" selection-start="2169" selection-end="2169" vertical-scroll-proportion="0.0" vertical-offset="851" max-vertical-offset="2040">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sabia/templates/revisao.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="59" selection-start="109" selection-end="109" vertical-scroll-proportion="0.089238845" vertical-offset="0" max-vertical-offset="612">
+        <state line="29" column="66" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.68766403" vertical-offset="231" max-vertical-offset="629">
           <folding />
         </state>
       </provider>

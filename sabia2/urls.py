@@ -13,7 +13,7 @@ urlpatterns = patterns('',
     url(r'^documento/$', 'Sabia.views.documento', name='documento' ), # pagina de cadastro
     url(r'^salvar_documento/$', 'Sabia.views.salvar_documento', name='salvar_documento' ), # pagina de cadastro
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^relacionados/', 'Sabia.views.relacionados', name='relacionados'),
+    url(r'^relacionados/$', 'Sabia.views.relacionados', name='relacionados'),
     url(r'^listar/', 'Sabia.views.listar', name='listar'),
     url(r'^(?P<pk>[0-9]+)/revisoes/$', 'Sabia.views.revisao', name='revisao'),
     url(r"^postar/(nova_pergunta|revisar)/(\d+)/$", 'Sabia.views.postar',name='postar'),
