@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f93065c0-a8a6-4b5c-a00d-259374aa6d4a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sabia/templates/revisao.html" afterPath="$PROJECT_DIR$/Sabia/templates/revisao.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sabia2.iws" />
@@ -34,7 +35,13 @@
         <entry file="file://$PROJECT_DIR$/Sabia/templates/relacionados.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="6" column="8" selection-start="115" selection-end="115" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="578">
-              <folding />
+              <folding>
+                <marker date="1406938086835" expanded="true" signature="74:114" placeholder="..." />
+                <marker date="1406938086835" expanded="true" signature="141:217" placeholder="..." />
+                <marker date="1406938086835" expanded="true" signature="167:210" placeholder="..." />
+                <marker date="1406938086835" expanded="true" signature="227:641" placeholder="..." />
+                <marker date="1406938086835" expanded="true" signature="243:628" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,7 +49,7 @@
       <file leaf-file-name="revisao.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sabia/templates/revisao.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="696" selection-end="696" vertical-scroll-proportion="0.7585302" vertical-offset="0" max-vertical-offset="714">
+            <state line="2" column="59" selection-start="109" selection-end="109" vertical-scroll-proportion="0.089238845" vertical-offset="0" max-vertical-offset="612">
               <folding />
             </state>
           </provider>
@@ -131,12 +138,12 @@
         <option value="$PROJECT_DIR$/Sabia/templates/nova.html" />
         <option value="$PROJECT_DIR$/Sabia/templates/CadastroDocumento.html" />
         <option value="$PROJECT_DIR$/Sabia/templates/postar.html" />
-        <option value="$PROJECT_DIR$/Sabia/templates/revisao.html" />
         <option value="$PROJECT_DIR$/Sabia/views.py" />
         <option value="$PROJECT_DIR$/Sabia/templates/detalhe.html" />
         <option value="$PROJECT_DIR$/Sabia/templates/header.html" />
         <option value="$PROJECT_DIR$/Sabia/templates/listar.html" />
         <option value="$PROJECT_DIR$/sabia2/urls.py" />
+        <option value="$PROJECT_DIR$/Sabia/templates/revisao.html" />
       </list>
     </option>
   </component>
@@ -592,7 +599,11 @@
       <created>1407268145646</created>
       <updated>1407268145646</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="minor changes">
+      <created>1407268291164</created>
+      <updated>1407268291164</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -772,7 +783,13 @@
     <entry file="file://$PROJECT_DIR$/Sabia/templates/relacionados.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="8" selection-start="115" selection-end="115" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="578">
-          <folding />
+          <folding>
+            <marker date="1406938086835" expanded="true" signature="74:114" placeholder="..." />
+            <marker date="1406938086835" expanded="true" signature="141:217" placeholder="..." />
+            <marker date="1406938086835" expanded="true" signature="167:210" placeholder="..." />
+            <marker date="1406938086835" expanded="true" signature="227:641" placeholder="..." />
+            <marker date="1406938086835" expanded="true" signature="243:628" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -785,7 +802,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sabia/templates/revisao.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="696" selection-end="696" vertical-scroll-proportion="0.7585302" vertical-offset="0" max-vertical-offset="714">
+        <state line="2" column="59" selection-start="109" selection-end="109" vertical-scroll-proportion="0.089238845" vertical-offset="0" max-vertical-offset="612">
           <folding />
         </state>
       </provider>
