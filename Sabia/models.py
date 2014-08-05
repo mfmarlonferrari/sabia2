@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.db import models
 from datetime import datetime
+from django.contrib.auth.models import User
 from taggit.managers import TaggableManager
 
 # Create your models here.
@@ -41,3 +42,11 @@ class Documento(models.Model):
     def __unicode__(self):
         return u"%s - %s - %s - %s - %s" % (self.titulo, self.autor, self.tag, self.resumo_em_html, \
                self.classificacao)
+
+class Revisao(models.Model):
+    documento = models.ForeignKey(Documento)
+    autor = models.ForeignKey(User, blank=False, null=False)
+    dtCriacao = models.DateTimeField(auto_now_add=True)
+    conteudo = models.TextField()
+
+

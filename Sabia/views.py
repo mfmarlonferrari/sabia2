@@ -3,6 +3,7 @@
 from django.forms import ModelForm
 from Sabia.models import *
 from django.http import HttpResponseRedirect
+from django.shortcuts import render
 from django.core.urlresolvers import reverse
 from django.core.context_processors import csrf
 import nltk
@@ -56,7 +57,19 @@ def salvar_usuario(request):
         grupo = Grupo.objects.all()
         return render_to_response("CadastroUsuario.html", {'grupo': grupo}, context_instance=RequestContext(request))        
         
+def listar(request):
+    documentos = Documento.objects.all()
+    context = dict(documentos=documentos, user=request.user)
+    return render(request, 'listar.html', context)
 
+def revisao(request, pk):
+    """Lista todas as revisoes de um artigo"""
+    revisoes = Revisao.objects.filter(documento=pk).order_by("-dtCriacao")
+    titulo = Documento.objects.get(pk=pk).titulo
+    conteudo = Documento.objects.get(pk=pk).resumo_em_html
+    tag = Documento.objects.get(pk=pk).tag
+    context = dict(revisoes=revisoes, pk=pk, titulo=titulo, conteudo=conteudo, tag=tag)
+    return render(request, 'revisao.html', context)
 
 def documento(request): 
     return render_to_response("CadastroDocumento.html", RequestContext(request, {}))
@@ -83,3 +96,22 @@ def salvar_documento(request):
                                        data_publicacao=p["data_publicacao"], classificacao=p["classificacao"], sumario=sumario)
         doc.tag.add(*tags)
     return HttpResponseRedirect(reverse("documento"))
+
+def postar(request, ptipo, pk):
+    """Exibe um form de post generico"""
+    acao = reverse("Sabia.views.%s" % ptipo, args=[pk])
+    if ptipo == "revisar":
+        titulo = "Revisar"
+        destino = "Revisando: " + Documento.objects.get(pk=pk).titulo
+        conteudo = Documento.objects.get(pk=pk).resumo_em_html
+    context = dict(destino=destino,acao=acao,titulo=titulo, conteudo=conteudo)
+    return render(request, 'postar.html', context)
+
+def revisar(request, pk):
+    """Revisa um artigo"""
+    p = request.POST
+    if p["conteudo"]:
+        documento = Documento.objects.get(pk=pk)
+        revisao = Revisao.objects.create(documento=documento, conteudo=p["conteudo"],
+                                           autor=request.user)
+    return HttpResponseRedirect(reverse("revisao", args=[pk]))
