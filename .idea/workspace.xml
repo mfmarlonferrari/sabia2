@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f93065c0-a8a6-4b5c-a00d-259374aa6d4a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sabia/templates/detalhe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sabia/templates/header.html" afterPath="$PROJECT_DIR$/Sabia/templates/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sabia/templates/listar.html" afterPath="$PROJECT_DIR$/Sabia/templates/listar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sabia/templates/revisao.html" afterPath="$PROJECT_DIR$/Sabia/templates/revisao.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabia2/urls.py" afterPath="$PROJECT_DIR$/sabia2/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sabia/views.py" afterPath="$PROJECT_DIR$/Sabia/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sabia2.iws" />
@@ -46,10 +39,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="revisao.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="revisao.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sabia/templates/revisao.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="533" selection-end="533" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="663">
+            <state line="17" column="0" selection-start="696" selection-end="696" vertical-scroll-proportion="0.7585302" vertical-offset="0" max-vertical-offset="714">
               <folding />
             </state>
           </provider>
@@ -64,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sabia2/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="58" selection-start="863" selection-end="863" vertical-scroll-proportion="0.5012225" vertical-offset="33" max-vertical-offset="476">
+            <state line="16" column="58" selection-start="863" selection-end="863" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="476">
               <folding />
             </state>
           </provider>
@@ -595,7 +588,11 @@
       <created>1407260624419</created>
       <updated>1407260624419</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="minor changes">
+      <created>1407268145646</created>
+      <updated>1407268145646</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -680,7 +677,8 @@
     <MESSAGE value="Parte do MArlon e Wander Integradas" />
     <MESSAGE value="Grandes alterações: Melhorado sistema de tags e sumarizador, adicionado motor de busca de relacionados" />
     <MESSAGE value="editor de revisões, visualizador de documentos, visualizador de revisões" />
-    <option name="LAST_COMMIT_MESSAGE" value="editor de revisões, visualizador de documentos, visualizador de revisões" />
+    <MESSAGE value="minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -750,13 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sabia/templates/revisao.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="533" selection-end="533" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="663">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sabia/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="36" selection-start="2567" selection-end="2567" vertical-scroll-proportion="0.0" vertical-offset="788" max-vertical-offset="1989">
@@ -787,7 +778,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sabia2/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="58" selection-start="863" selection-end="863" vertical-scroll-proportion="0.5012225" vertical-offset="33" max-vertical-offset="476">
+        <state line="16" column="58" selection-start="863" selection-end="863" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sabia/templates/revisao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="696" selection-end="696" vertical-scroll-proportion="0.7585302" vertical-offset="0" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
