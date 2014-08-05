@@ -23,8 +23,10 @@
     {% for revisao in revisoes %}
         <div class="post">
             <hr>
-            revisão de {{ revisao.autor }} em <span class="date">{{ revisao.dtCriacao }}</span> <br /><br />
-            {{ revisao.conteudo }} <br />
+                revisão de {{ revisao.autor }} em <span class="date">{{ revisao.dtCriacao }}</span> <br /><br />
+                <a class="button" href={% url 'detalhe' revisao.pk %}>Ver</a>
+
+
         </div>
     {% endfor %}
     <a class="button" href={% url 'postar' 'revisar' pk %}>Nova Revisão</a>

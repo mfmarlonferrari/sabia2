@@ -1,0 +1,15 @@
+{% load staticfiles %}
+{%include "header.html" %}
+<script src="{% static 'ckeditor/ckeditor.js' %}"></script>
+
+<textarea id="revisao" name="revisao">&lt;p&gt;{{ revisao }}&lt;/p&gt;</textarea>
+    <script type="text/javascript">
+        CKEDITOR.replace( 'revisao', {Toolbar: 'Full', height: 460, width: 1360});
+    </script>
+ <div class="main">
+<!-- Respostas  -->
+<div class="title"></div>
+<script>
+    document.write('<a href="' + document.referrer + '">Voltar</a>');
+</script>
+{%include "footer.html" %}

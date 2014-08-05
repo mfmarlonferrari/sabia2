@@ -18,6 +18,8 @@ urlpatterns = patterns('',
     url(r'^(?P<pk>[0-9]+)/revisoes/$', 'Sabia.views.revisao', name='revisao'),
     url(r"^postar/(nova_pergunta|revisar)/(\d+)/$", 'Sabia.views.postar',name='postar'),
     url(r"^responder/(\d+)/$", 'Sabia.views.revisar',name='revisar'),
+    url(r'^(?P<pk>[0-9]+)/detalhe/$', 'Sabia.views.detalhe', name='detalhe'),
+
 
 
 )

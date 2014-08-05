@@ -71,6 +71,12 @@ def revisao(request, pk):
     context = dict(revisoes=revisoes, pk=pk, titulo=titulo, conteudo=conteudo, tag=tag)
     return render(request, 'revisao.html', context)
 
+def detalhe(request, pk):
+    """Lista uma revisao de um artigo"""
+    revisao = Revisao.objects.get(pk=pk).conteudo
+    context = dict(revisao=revisao)
+    return render(request, 'detalhe.html', context)
+
 def documento(request): 
     return render_to_response("CadastroDocumento.html", RequestContext(request, {}))
 
