@@ -4,9 +4,8 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^$', 'Sabia.views.index', name='index'),    
-	url(r'^autenticar_usuario/$', 'Sabia.views.autenticar_usuario', name='autenticar_usuario' ),
-    
+    url(r'^$', 'django.contrib.auth.views.login', {'template_name':'login.html'}),
+    url(r'^index/$', 'Sabia.views.index', name='index' ),
 	url(r'^usuario/$', 'Sabia.views.usuario', name='usuario' ), # pagina de cadastro
     url(r'^salvar_usuario/$', 'Sabia.views.salvar_usuario', name='salvar_usuario' ), # pagina de cadastro
 

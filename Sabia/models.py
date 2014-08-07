@@ -10,23 +10,14 @@ class Projeto(models.Model):
     objetivo = models.TextField()
     palavras_chaves= models.TextField()
     data_cadastro = models.DateField(default=datetime.now, editable=False)
-    
+
     def __unicode__(self):
         return self.nome
 
 class Grupo(models.Model):
-    nome  = models.CharField(max_length = 100)    
-    projeto_id = models.ForeignKey(Projeto)
-        
-    def __unicode__(self):
-        return self.nome
-
-class Usuario(models.Model):
     nome  = models.CharField(max_length = 100)
-    email = models.CharField(max_length = 100)
-    senha = models.CharField(max_length = 20)
-    grupo = models.ForeignKey(Grupo)
-        
+    projeto_id = models.ForeignKey(Projeto)
+
     def __unicode__(self):
         return self.nome
 

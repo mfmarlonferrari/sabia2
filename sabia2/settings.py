@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 #import os.path
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+LOGIN_REDIRECT_URL = '/listar'
 
 
 # Quick-start development settings - unsuitable for production

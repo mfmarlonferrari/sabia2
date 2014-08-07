@@ -1,0 +1,27 @@
+{% load staticfiles %}
+{% include "header.html "%}
+
+<div class="container">
+    {% if form.errors %}
+        <p>Dados incorretos. Tente novamente</p>
+    {% endif %}
+    <form class="form-signin" role="form"  method="POST" action="{% url 'django.contrib.auth.views.login' %}">
+        {% csrf_token %}
+        <h2 class="form-signin-heading">Acessar Sistema</h2>
+        <table>
+            <tr>
+                <td>{{ form.username.label_tag }}</td>
+                <td>{{ form.username }}</td>
+            </tr>
+            <tr>
+                <td>{{ form.password.label_tag }}</td>
+                <td>{{ form.password }}</td>
+            </tr>
+        </table>
+
+        <input type="submit" value="login" />
+        <input type="hidden" name="next" value="{{ next }}" />
+    </form>
+</div>
+
+{% include "footer.html "%}
