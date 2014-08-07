@@ -27,6 +27,9 @@
 {% endfor %}
 
     <a class="button" href={% url 'postar' 'revisar' pk %}>Nova Revisão</a>
-    <a class="button" href={% url 'relacionados' %}>Relacionados</a>
+    <form action="/relacionados" method="get">
+        <input type="hidden" name="q" value={{ pesquisa }}>
+        <input type="submit" value="Artigos Relacionados">
+    </form>
 
 </div>

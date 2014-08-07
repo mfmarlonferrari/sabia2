@@ -17,7 +17,7 @@ def index(request):
     return render_to_response("index.html", RequestContext(request, {}))
 
 def relacionados(request):
-    return render_to_response("relacionados.html", RequestContext(request, {}))
+    return render(request, 'relacionados.html')
 
 class DocumentosModelForm(ModelForm):
     class Meta:
@@ -66,12 +66,14 @@ def revisao(request, pk):
     revisoes = Revisao.objects.filter(documento=pk).order_by("-dtCriacao")
     titulo = Documento.objects.get(pk=pk).titulo
     conteudo = Documento.objects.get(pk=pk).resumo_em_html
-    #tag = Documento.objects.get(pk=pk).tag
-    #carrega as tags para serem usadas na pesquisa de relacionados
-    '''tags = []
+    tag = Documento.objects.get(pk=pk).tag
+    #carrega as tags em uma lista para serem usadas na pesquisa de relacionados
+    tags = []
     for t in tag.all():
-        tags.append(str(t))'''
-    context = dict(revisoes=revisoes, pk=pk, titulo=titulo, conteudo=conteudo)
+        tags.append(str(t))
+    #forma a string de pesquisa unindo a lista com uma virgula entre as palavras
+    pesquisa = ','.join(tags)
+    context = dict(revisoes=revisoes, pk=pk, titulo=titulo, conteudo=conteudo, pesquisa=pesquisa)
     return render(request, 'revisao.html', context)
 
 def detalhe(request, pk):
@@ -104,7 +106,7 @@ def salvar_documento(request):
         doc = Documento.objects.create(titulo=p["titulo"], autor=p["autor"], resumo_em_html=p["resumo_em_html"],
                                        data_publicacao=p["data_publicacao"], classificacao=p["classificacao"], sumario=sumario)
         doc.tag.add(*tags)
-    return HttpResponseRedirect(reverse("documento"))
+    return HttpResponseRedirect(reverse("listar"))
 
 def postar(request, ptipo, pk):
     """Exibe um form de post generico"""
