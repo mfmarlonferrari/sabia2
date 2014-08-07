@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f93065c0-a8a6-4b5c-a00d-259374aa6d4a" name="Default" comment="minor changes">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sabia/templates/revisao.html" afterPath="$PROJECT_DIR$/Sabia/templates/revisao.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sabia/views.py" afterPath="$PROJECT_DIR$/Sabia/views.py" />
+    <list default="true" id="f93065c0-a8a6-4b5c-a00d-259374aa6d4a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sabia/templates/relacionados.html" afterPath="$PROJECT_DIR$/Sabia/templates/relacionados.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sabia2.iws" />
@@ -35,16 +35,43 @@
       <file leaf-file-name="relacionados.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sabia/templates/relacionados.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="-10.153846" vertical-offset="195" max-vertical-offset="578">
+            <state line="28" column="0" selection-start="696" selection-end="696" vertical-scroll-proportion="-10.807693" vertical-offset="195" max-vertical-offset="578">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="revisao.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views_autenticacao.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sabia/views_autenticacao.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sabia/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.2692308" vertical-offset="59" max-vertical-offset="408">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="revisao.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sabia/templates/revisao.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="56" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.6005222" vertical-offset="297" max-vertical-offset="680">
+            <state line="34" column="6" selection-start="1176" selection-end="1176" vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="680">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sabia/templates/footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="94" selection-start="266" selection-end="266" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="289">
               <folding />
             </state>
           </provider>
@@ -62,16 +89,16 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sabia2/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="55" selection-start="1158" selection-end="1158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+            <state line="7" column="57" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sabia/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="57" selection-start="2407" selection-end="2407" vertical-scroll-proportion="0.0" vertical-offset="985" max-vertical-offset="2261">
+            <state line="73" column="57" selection-start="2407" selection-end="2407" vertical-scroll-proportion="3.1984537" vertical-offset="0" max-vertical-offset="2261">
               <folding>
                 <element signature="e#42#76#0" expanded="true" />
               </folding>
@@ -128,10 +155,10 @@
         <option value="$PROJECT_DIR$/Sabia/templates/detalhe.html" />
         <option value="$PROJECT_DIR$/Sabia/templates/header.html" />
         <option value="$PROJECT_DIR$/Sabia/templates/listar.html" />
-        <option value="$PROJECT_DIR$/Sabia/templates/relacionados.html" />
         <option value="$PROJECT_DIR$/sabia2/urls.py" />
         <option value="$PROJECT_DIR$/Sabia/views.py" />
         <option value="$PROJECT_DIR$/Sabia/templates/revisao.html" />
+        <option value="$PROJECT_DIR$/Sabia/templates/relacionados.html" />
       </list>
     </option>
   </component>
@@ -603,7 +630,11 @@
       <created>1407275195150</created>
       <updated>1407275195150</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="sistema de recomendação 100%">
+      <created>1407434337011</created>
+      <updated>1407434337011</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -628,8 +659,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973805" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -639,13 +671,12 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990755" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973805" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32973805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32973805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -689,17 +720,13 @@
     <MESSAGE value="Grandes alterações: Melhorado sistema de tags e sumarizador, adicionado motor de busca de relacionados" />
     <MESSAGE value="editor de revisões, visualizador de documentos, visualizador de revisões" />
     <MESSAGE value="minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor changes" />
+    <MESSAGE value="sistema de recomendação 100%" />
+    <option name="LAST_COMMIT_MESSAGE" value="sistema de recomendação 100%" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="409" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sabia/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.16625917" vertical-offset="0" max-vertical-offset="409" />
@@ -710,16 +737,6 @@
         <state line="14" column="0" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1972">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sabia/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="610" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sabia/templates/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="94" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="289" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sabia/templates/postar.html">
@@ -763,33 +780,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Sabia/templates/revisao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="6" selection-start="1176" selection-end="1176" vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sabia/templates/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="94" selection-start="266" selection-end="266" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sabia/templates/relacionados.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="696" selection-end="696" vertical-scroll-proportion="-10.807693" vertical-offset="195" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sabia/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.2692308" vertical-offset="59" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sabia/views_autenticacao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="409">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sabia2/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="55" selection-start="1158" selection-end="1158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+        <state line="7" column="57" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sabia/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="57" selection-start="2407" selection-end="2407" vertical-scroll-proportion="0.0" vertical-offset="985" max-vertical-offset="2261">
+        <state line="73" column="57" selection-start="2407" selection-end="2407" vertical-scroll-proportion="3.1984537" vertical-offset="0" max-vertical-offset="2261">
           <folding>
             <element signature="e#42#76#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sabia/templates/relacionados.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="-10.153846" vertical-offset="195" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sabia/templates/revisao.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="56" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.6005222" vertical-offset="297" max-vertical-offset="680">
-          <folding />
         </state>
       </provider>
     </entry>
