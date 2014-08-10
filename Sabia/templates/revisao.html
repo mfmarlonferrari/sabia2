@@ -1,35 +1,47 @@
 {% load staticfiles %}
 {%include "header.html" %}
 <script src="{% static 'ckeditor/ckeditor.js' %}"></script>
+               
+<div class="page-header">
+  <div class="container">
+    <h2>{{ titulo }}</h2>
+  </div>
+</div>
 
-<style type="text/css">
-   .main { margin-left: 25px; margin-top: 30px; width: 700px; }
-   .title { font-size: 1.4em; margin-top: 0px; padding-left: 4px; }
-   .title a { text-decoration: none; }
-   .button { background: #999; color: white; padding: 4px; text-decoration: none; }
-    td { border-bottom: 1px solid #ccc; }
-    #list { border: 1px solid #ccc; width: 700px; }
-</style>
- <div class="main">
+<div class="container"> 
 
-<div class="title">{{ titulo }}</div>
-    {% autoescape off %}
-        {{ conteudo }}
-    {% endautoescape %}
-<div id="list">
+  <textarea id="conteudo" name="conteudo">&lt;p&gt;{{ conteudo }}&lt;/p&gt;</textarea>
+  <script type="text/javascript">
+        CKEDITOR.replace( 'conteudo', {Toolbar: 'Full', height: 400});
+  </script>
 
-{% for revisao in revisoes %}
-    <div class="post">
-        <hr>
-            revisão de {{ revisao.autor }} em <span class="date">{{ revisao.dtCriacao }}</span> <br /><br />
-            <a class="button" href={% url 'detalhe' revisao.pk %}>Ver</a>
+  <br/>
+  <!-- Button -->
+    <div class="row">   
+      <div class='col-sm-8'>                          
+        <a  class="btn btn-primary btn-sm criar-resumo" href={% url 'postar' 'revisar' pk %}>Nova Revisão</a>          
+      </div>
     </div>
-{% endfor %}
+</div>
 
-    <a class="button" href={% url 'postar' 'revisar' pk %}>Nova Revisão</a>
-    <form action="/relacionados" method="get">
-        <input type="hidden" name="q" value={{ pesquisa }}>
-        <input type="submit" value="Artigos Relacionados">
-    </form>
+
+
+ <div class="main">
+<!-- Respostas  -->
+
+
+<div id="list">
+{% autoescape off %}
+  
+    {% for revisao in revisoes %}
+        <div class="post">
+            <hr>
+            revisão de {{ revisao.autor }} em <span class="date">{{ revisao.dtCriacao }}</span> <br /><br />
+            {{ revisao.conteudo }} <br />
+        </div>
+    {% endfor %}
+
+{% endautoescape %}
+
 
 </div>
