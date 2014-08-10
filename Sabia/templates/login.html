@@ -1,31 +1,25 @@
 {% load staticfiles %}
 {% include "header.html "%}
 
-
-
- <!-- Tela para login -->            
 <div class="container">
-
-
+    {% if form.errors %}
+        <p>Dados incorretos. Tente novamente</p>
+    {% endif %}
     <form class="form-signin" role="form"  method="POST" action="{% url 'django.contrib.auth.views.login' %}">
         {% csrf_token %}
         <h2 class="form-signin-heading">Acessar Sistema</h2>
+        <table>
+            <tr>
+                <td>{{ form.username.label_tag }}</td>
+                <td>{{ form.username }}</td>
+            </tr>
+            <tr>
+                <td>{{ form.password.label_tag }}</td>
+                <td>{{ form.password }}</td>
+            </tr>
+        </table>
 
-
-        {% if form.errors %}
-            
-            <div class="alert alert-danger alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
-                <p>Dados incorretos! <br/> Para acessar o sistema insira os dados de acesso correto.</p>
-            </div>
-
-        {% endif %}
-
-
-        <input type="text" class="form-control login" placeholder="Usuário" id="id_username" name="username" required autofocus>          
-        <input type="password" class="form-control senha" placeholder="Senha" id="id_password" name="password" required>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
-
+        <input type="submit" value="login" />
         <input type="hidden" name="next" value="{{ next }}" />
     </form>
 </div>

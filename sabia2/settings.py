@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'Sabia',
     'taggit',
+    'bootstrap3',
 )
 
 MIDDLEWARE_CLASSES = (
