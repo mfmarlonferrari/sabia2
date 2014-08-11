@@ -1,4 +1,4 @@
-"""
+ """
 Django settings for Sabia2 project.
 
 For more information on this file, see
