@@ -3,12 +3,6 @@
 <script src="{% static 'ckeditor/ckeditor.js' %}"></script>
 
 <style type="text/css">
-        .main { margin-left: 25px; margin-top: 30px; }
-        .last { border: 0px; }
-
-        #revisar { margin-top: 10px; width: 500px; }
-        #body { width: 500px; height: 250px; font-size: 1.3em; }
-        #submit { float: right; }
         #rtitle {
             background: #eee; font-size: 1.3em; padding: 3px; margin-top: 40px;
             padding-left: 20px; margin-bottom: -10px;
@@ -17,17 +11,14 @@
 
 <div class="main">
         <div id="revisar">
-            <div id="rtitle">{{ titulo }}</div><br />
+            <div id="rtitle">{{ destino }}</div><br />
             <form action="{{ acao }}" method="POST"> {% csrf_token %}
-                Destino: <input type="text" name="destino" size="60" value="{{ destino }}" /><br />
+                <input type="hidden" name="destino" size="150" value="{{ destino }}" /><br />
                 <textarea id="conteudo" name="conteudo">&lt;p&gt;{{ conteudo }}&lt;/p&gt;</textarea>
 			    <script type="text/javascript">
-				    CKEDITOR.replace( 'conteudo' );
+				    CKEDITOR.replace( 'conteudo', {Toolbar: 'Full', height: 460, width: 1350} );
 			    </script>
                 <input type="submit" value="Postar" id="submit" />
             </form>
-
         </div>
-    </div>
-
- {% include "footer.html" %}
+</div>

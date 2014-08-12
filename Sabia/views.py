@@ -79,7 +79,9 @@ def revisao(request, pk):
 def detalhe(request, pk):
     """Lista uma revisao de um artigo"""
     revisao = Revisao.objects.get(pk=pk).conteudo
-    context = dict(revisao=revisao)
+    dtCriacao = Revisao.objects.get(pk=pk).dtCriacao
+    autor = Revisao.objects.get(pk=pk).autor
+    context = dict(revisao=revisao, autor=autor, dtCriacao=dtCriacao)
     return render(request, 'detalhe.html', context)
 
 def documento(request): 
@@ -113,7 +115,7 @@ def postar(request, ptipo, pk):
     acao = reverse("Sabia.views.%s" % ptipo, args=[pk])
     if ptipo == "revisar":
         titulo = "Revisar"
-        destino = "Revisando: " + Documento.objects.get(pk=pk).titulo
+        destino = Documento.objects.get(pk=pk).titulo
         conteudo = Documento.objects.get(pk=pk).resumo_em_html
     context = dict(destino=destino,acao=acao,titulo=titulo, conteudo=conteudo)
     return render(request, 'postar.html', context)

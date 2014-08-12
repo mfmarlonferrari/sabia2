@@ -1,30 +1,23 @@
 {% load staticfiles %}
 {%include "header.html" %}
-
-
-
 <script src="{% static 'ckeditor/ckeditor.js' %}"></script>
 
+<style type="text/css">
+        #rtitle {
+            background: #eee; font-size: 1.3em; padding: 3px; margin-top: 40px;
+            padding-left: 20px; margin-bottom: -10px;
+        }
+</style>
 
-<div class="page-header">
-  <div class="container">
-    <h2>Detalhes Revisão</h2>
-  </div>
+<div class="main">
+        <div id="revisar">
+            <div id="rtitle"> Revisão de {{ autor }} feito em {{ dtCriacao }}</div><br />
+                <textarea id="revisao" name="revisao">&lt;p&gt;{{ revisao }}&lt;/p&gt;</textarea>
+			    <script type="text/javascript">
+				    CKEDITOR.replace( 'revisao', {Toolbar: 'Full', height: 450, width: 1350} );
+			    </script>
+ 		        <script>
+		            document.write('<a href="' + document.referrer + '">Voltar</a>');
+		        </script>
+        </div>
 </div>
-<div class="container">
-	<textarea id="revisao" name="revisao">&lt;p&gt;{{ revisao }}&lt;/p&gt;</textarea>
-	    <script type="text/javascript">
-	        CKEDITOR.replace( 'revisao', {Toolbar: 'Full', height: 460, width: 1360});
-	    </script>
-	 <div class="main">
-	
-	<!-- Respostas  -->
-	
-	<div class="title"></div>
-		<script>
-		    document.write('<a href="' + document.referrer + '">Voltar</a>');
-		</script>
-		
-	</div>
-</div>
-{%include "footer.html" %}
