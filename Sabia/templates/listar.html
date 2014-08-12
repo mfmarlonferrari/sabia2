@@ -3,12 +3,7 @@
 
 
 <style type="text/css">
-     body{background-color: #fff;}
-    .title { font-size: 1.4em; margin-top: 0; padding-left: 4px; }
-    .last { border: 0; }
-    .title a { text-decoration: none; }
-    td { border-bottom: 1px solid #ccc; }
-    #list { border: 1px solid #ccc; width: 700px; }
+     body{background-color: #fff;}    
 </style>
 
 <div class="page-header">
@@ -17,22 +12,32 @@
   </div>
 </div>
 
-<div id="list">
-<table border="5" width="100%">
-    <tr>
-        <td>Artigos</td>
-        <td>Contexto</td>
-    </tr>
 
-    {% for documento in documentos %}
-    <tr>
-        <td {% if forloop.last %}class="last"{% endif %}>
-        <div class="title"> <a href="{% url 'revisao' documento.pk%}"> {{ documento.titulo }}</a>
-            </div></td>
-        <td> {% for tag in documento.tag.all %}
-                 <li> {{ tag.name }} </li>
-        {% endfor %}
-        </td>
-    {% endfor %}
+<div class="container">                 
+      <!-- Table -->
+      <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Artigos</th>
+                <th>Contexto</th>
+            </tr>
+        </thead>    
+        <tbody>
+        {% for documento in documentos %}
+            <tr>
+                <td {% if forloop.last %}class="last"{% endif %}>
+                    <div class="title"> <a href="{% url 'revisao' documento.pk%}"> {{ documento.titulo }}</a></div>
+                </td>
+            <td> 
+                {% for tag in documento.tag.all %}
+                     <li> {{ tag.name }} </li>
+                {% endfor %}
+            </td>
+        {% endfor %}      
+        </tbody>
+      </table>
 </div>
+
+
+
 {% include "footer.html" %}
